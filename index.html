@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="THE WIZZ" />
+    <title>Glassmorphism Product</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="thumb">
+        <li onmouseover="changeImageSrc('img1.png')"><img src="img1.png" alt="Air Jordan 1" /></li>
+        <li onmouseover="changeImageSrc('img2.png')"><img src="img2.png" alt="Air Jordan 2" /></li>
+        <li onmouseover="changeImageSrc('img3.png')"><img src="img3.png" alt="Air Jordan 3" /></li>
+      </ul>
+      <div class="imgBox">
+        <h2>NIKE AIR JORDAN</h2>
+        <img src="img1.png" alt="Air Jordan 1" class="shoes" />
+        <ul class="size">
+          <span>Size</span>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ul>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+    </div>
+
+    <script>
+      function changeImageSrc(anything) {
+        document.querySelector('.shoes').src = anything;
+      }
+    </script>
+  </body>
+</html>
